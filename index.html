@@ -1,31 +1,57 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="description" content="Assignment 1">
+        <meta name="description" content="Web Assignment 1">
         <title>Cyrus Chan</title>
-
-        <link rel="stylesheet" href="css/stylesheet.css">
-    </head>
-    <body>
-
-        <h1 class="top_header">Take Better Notes</h1>
-
-        <h1>My Notes</h1>
-        <ul style="list-style-type: square;">
-            <li>note one</li>
-            <li>note two</li>
-        </ul>
-
-        <div class="footer_container">
-            <h1>Keep in Touch</h1>
-            <a href="https://www.linkedin.com/">
-            <img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/linkedin_circle_color-512.png" alt="Logo of LinkedIn">
-            </a>
-            <a href="https://www.google.ca/">
-            <img src="https://cdn0.iconfinder.com/data/icons/internet-line/512/Internet_Line-02-512.png" alt="Logo of the Web">
-            </a>
-        </div>
         
-    </body>
+	    <link rel="stylesheet" href="css/stylesheet.css">
+            
+    </head>
+
+<body>
+	<div class="grid_container">
+
+	<header class="top_header">
+		<h1>Take Better Notes</h1>
+	</header>
+
+	<section class="sidebar">
+		<h1>My Notes</h1>
+		<ul style="list-style-type: square;">
+			<li>note one</li>
+			<li>note two</li>
+		</ul>
+	</section>
+
+	<!-- Main section for the user-->
+	<article>
+		<div class="button">
+			<button class="button new_note" type="button">New Note</button>
+			<button class="button dark_theme" type="button">Change Theme</button>
+		</div>
+		<div>
+			<form style="text-align: center;">
+				<textarea name="user_notes" id="user_notes" cols="70" rows="8"></textarea>
+	
+				<div class="bottom_spacing">
+					<button class="button" style="background-color: rgb(95, 152, 125);">Save</button>
+					<button class="button" style="background-color: rgb(209, 59, 33);">Cancel</button>
+				</div>
+
+			</form>
+		</div>
+	</article>
+
+	<footer class="bottom_footer">
+		<h1>Keep in Touch</h1>
+        <a href="https://www.linkedin.com/">
+        <img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/linkedin_circle_color-512.png" width="35px" height="35px" alt="Logo of LinkedIn"></a>
+        <a href="https://www.google.ca/">
+        <img src="https://cdn0.iconfinder.com/data/icons/internet-line/512/Internet_Line-02-512.png" width="35px" height="35px" alt="Logo of the Web"></a>
+	</footer>
+
+
+</body>
 </html>

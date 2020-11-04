@@ -19,7 +19,7 @@
 .grid_container {
     display: grid;
     grid-template-columns: 1fr 2fr 4fr;
-    grid-gap: 15px;
+    grid-gap: 1em;
 }
 
 .sidebar {
@@ -37,12 +37,12 @@ article {
 }
 
 .button {
-    border: none;
-    border-radius: 10px;
-    font-size: 15px;
-    color: white;
+    border: none;   /* We do not want the outline */
+    border-radius: 1em;
+    font-size: 1em;
+    color: white;   /* Buttons have white text on them */
     padding: 15px 10px 15px 10px;
-    margin: 8px;
+    margin: 0.5em;
 }
 
 .new_note {
@@ -51,9 +51,9 @@ article {
 
 .dark_theme {
     background-color: rgb(105, 105, 105);
-    float: right;
+    float: right;   /* Display on top right hand corner */
 }
 
 .bottom_spacing {
-    padding: 10px
+    padding: 1em
 }

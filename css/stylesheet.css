@@ -1,1 +1,18 @@
-/* placeholder */
+.top_header {
+    /* Color value acquired from color picker in Windows Paint */
+    background-color: rgb(150, 126, 127);
+    text-align: center;
+}
+
+
+img {
+    width: 30px;
+    height: 30px;
+}
+
+
+.footer_container {
+    /* Color value acquired from color picker in Windows Paint */
+    background-color: rgb(222, 188, 185);
+    text-align: center;
+}

@@ -29,3 +29,15 @@ let save_button = () => {
     }
 
 }
+
+let hide_elements = () => {
+    document.getElementById("button_save").style.display= "none";
+    document.getElementById("button_cancel").style.display = "none";
+    document.getElementById("user_notes").style.display = "none";
+}
+
+let reveal_elements = () => {
+    document.getElementById("button_save").style.display= "inline-block";
+    document.getElementById("button_cancel").style.display = "inline-block";
+    document.getElementById("user_notes").style.display = "inline-block";
+}

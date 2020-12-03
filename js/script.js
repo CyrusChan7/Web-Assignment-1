@@ -41,3 +41,7 @@ let reveal_elements = () => {
     document.getElementById("button_cancel").style.display = "inline-block";
     document.getElementById("user_notes").style.display = "inline-block";
 }
+
+let clearUserTextArea = () => {
+    document.getElementById("user_notes").value = "";
+}

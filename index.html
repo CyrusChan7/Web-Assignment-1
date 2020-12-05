@@ -11,11 +11,11 @@
 <body>
 	<div class="grid_container">
 
-	<header class="top_header">
+	<header id="top_header" class="top_header">
 		<h1>Take Better Notes</h1>
 	</header>
 
-	<section class="sidebar">
+	<section id="sidebar" class="sidebar">
 		<h1>My Notes</h1>
 		<ul id="notes_list" style="list-style-type: square;">
 			<li>note one</li>
@@ -24,10 +24,10 @@
 	</section>
 
 	<!-- Main section for the user -->
-	<article>
+	<article id="user_input_text_area">
 		<div class="button">
-			<button onclick="reveal_elements(); clearUserTextArea();" class="button new_note" type="button">New Note</button>
-			<button class="button dark_theme" type="button">Change Theme</button>
+			<button id="new_note_button" onclick="reveal_elements(); clearUserTextArea();" class="button new_note" type="button">New Note</button>
+			<button id="change_theme_button" onclick="changeToNightTheme()" class="button dark_theme" type="button">Dark Theme</button>
 		</div>
 		<div>
 			<form style="text-align: center;">
@@ -40,7 +40,7 @@
 		</div>
 	</article>
 
-	<footer class="bottom_footer">
+	<footer id="bottom_footer" class="bottom_footer">
 		<h1>Keep in Touch</h1>
         <a href="https://www.linkedin.com/">
         <img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/linkedin_circle_color-512.png" width="35px" height="35px" alt="Logo of LinkedIn"></a>

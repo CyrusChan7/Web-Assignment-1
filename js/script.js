@@ -45,3 +45,32 @@ let reveal_elements = () => {
 let clearUserTextArea = () => {
     document.getElementById("user_notes").value = "";
 }
+
+let changeToNightTheme = () => {
+    // decrease all RGB values by 50, making it darker
+
+    let checkChangeThemeText = document.getElementById("change_theme_button");
+    if (checkChangeThemeText.innerHTML == "Dark Theme"){
+        checkChangeThemeText.innerHTML = "Light Theme";
+        document.getElementById("top_header").style.backgroundColor = 'rgb(99, 75, 76)';
+        document.getElementById("bottom_footer").style.backgroundColor = 'rgb(172, 138, 135)';
+        document.getElementById("sidebar").style.backgroundColor = 'rgb(142, 142, 142)';
+        document.getElementById("user_input_text_area").style.backgroundColor = 'rgb(185, 181, 181)';
+    
+        document.getElementById("button_save").style.backgroundColor = 'rgb(45, 102, 75)';
+        document.getElementById("button_cancel").style.backgroundColor = 'rgb(159, 9, 0)';
+        document.getElementById("new_note_button").style.backgroundColor = 'rgb(44, 101, 74)';
+        document.getElementById("change_theme_button").style.backgroundColor = 'rgb(55, 55, 55)';
+    } else if (checkChangeThemeText.innerHTML == "Light Theme"){
+        checkChangeThemeText.innerHTML = "Dark Theme";
+        document.getElementById("top_header").style.backgroundColor = 'rgb(149, 125, 126)';
+        document.getElementById("bottom_footer").style.backgroundColor = 'rgb(222, 188, 185)';
+        document.getElementById("sidebar").style.backgroundColor = 'rgb(192, 192, 192)';
+        document.getElementById("user_input_text_area").style.backgroundColor = 'rgb(235, 231, 231)';
+    
+        document.getElementById("button_save").style.backgroundColor = 'rgb(95, 152, 125)';
+        document.getElementById("button_cancel").style.backgroundColor = 'rgb(209, 59, 33)';
+        document.getElementById("new_note_button").style.backgroundColor = 'rgb(94, 151, 124)';
+        document.getElementById("change_theme_button").style.backgroundColor = 'rgb(105, 105, 105)';
+    }
+}

@@ -3,7 +3,7 @@ let notesArray = [
     {title: "note two", body: "some text 2"}
 ]
 
-let save_button = () => {
+let saveButton = () => {
     let textInput = document.getElementById("user_notes").value.split("\n");
     //console.log(textInput);
     if (textInput == [""]){
@@ -30,13 +30,13 @@ let save_button = () => {
 
 }
 
-let hide_elements = () => {
+let hideElements = () => {
     document.getElementById("button_save").style.display= "none";
     document.getElementById("button_cancel").style.display = "none";
     document.getElementById("user_notes").style.display = "none";
 }
 
-let reveal_elements = () => {
+let revealElements = () => {
     document.getElementById("button_save").style.display= "inline-block";
     document.getElementById("button_cancel").style.display = "inline-block";
     document.getElementById("user_notes").style.display = "inline-block";
